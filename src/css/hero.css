@@ -3,20 +3,41 @@
   padding: 38px 48px;
   text-align: center;
   margin: 0 auto;
+
+  background-color: lightblue;
+  border-radius: 32px;
+  margin-bottom: 15px;
 }
 
-/* Tablet */
+.imagem-integrador {
+  display: block;
+  margin: 0 auto;
+  width: auto;
+  height: 400px;
+  max-width: 100%;
+
+  margin-bottom: 40px;
+}
+
 @media screen and (max-width: 768px) {
   .sobre-o-curso {
     width: 90%;
     padding: 24px 24px;
   }
+
+  .imagem-integrador {
+    height: auto;
+    width: 90%;
+  }
 }
 
-/* Mobile */
 @media screen and (max-width: 480px) {
   .sobre-o-curso {
     width: 100%;
     padding: 24px 16px;
+  }
+
+  .imagem-integrador {
+    width: 100%;
   }
 }
