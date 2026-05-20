@@ -11,6 +11,17 @@ header {
   display: flex;
   flex-direction: column;
   gap: 4px;
+  background: url(../assets/background-code.webp);
+  color: white;
+  margin-bottom: 10px;
+}
+
+nav a {
+  color: azure;
+}
+
+nav a:hover {
+  color: cadetblue;
 }
 
 nav ul {
