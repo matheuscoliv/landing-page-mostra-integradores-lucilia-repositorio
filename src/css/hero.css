@@ -1,9 +1,8 @@
 .sobre-o-curso {
-  width: 400px;
+  width: min(400px, 90%);
   padding: 38px 48px;
   text-align: center;
   margin: 0 auto;
-
   background-color: lightblue;
   border-radius: 32px;
   margin-bottom: 15px;
@@ -15,14 +14,14 @@
   width: auto;
   height: 400px;
   max-width: 100%;
-
   margin-bottom: 40px;
 }
 
 @media screen and (max-width: 768px) {
   .sobre-o-curso {
     width: 90%;
-    padding: 24px 24px;
+    padding: 24px 20px;
+    border-radius: 20px;
   }
 
   .imagem-integrador {
@@ -34,7 +33,10 @@
 @media screen and (max-width: 480px) {
   .sobre-o-curso {
     width: 100%;
-    padding: 24px 16px;
+    padding: 20px 14px;
+    border-radius: 16px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .imagem-integrador {

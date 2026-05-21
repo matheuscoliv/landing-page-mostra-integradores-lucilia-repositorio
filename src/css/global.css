@@ -1,4 +1,10 @@
 /*CSS RESET SIMPLES*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body,
 img,
 h1,
@@ -15,6 +21,13 @@ button {
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* evita scroll horizontal acidental */
+}
+
 h1 {
   font-size: 40px;
 }
@@ -29,4 +42,40 @@ h3 {
 
 p {
   font-size: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 17px;
+  }
 }

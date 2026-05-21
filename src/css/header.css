@@ -5,15 +5,20 @@ header {
   align-items: center;
   padding: 38px 48px;
   gap: 24px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .header-titulo {
   display: flex;
   flex-direction: column;
   gap: 4px;
-  background: url(../assets/background-code.webp);
+  background: url(../assets/background-code.webp) center/cover no-repeat;
+  background-size: cover;
   color: white;
   margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 nav a {
@@ -38,16 +43,16 @@ li {
 }
 
 img {
-  widht: 98px;
+  width: 98px;
   height: 94px;
 }
 
-/* Responsivo: mobile empilha tudo */
 @media screen and (max-width: 768px) {
   header {
     flex-direction: column;
     align-items: flex-start;
     padding: 24px 16px;
+    gap: 12px;
   }
 
   nav ul {
@@ -56,7 +61,23 @@ img {
   }
 
   .logo {
-    width: 70px;
+    display: block;
+    width: 60px;
     height: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    padding: 16px 12px;
+    gap: 10px;
+  }
+
+  nav ul {
+    gap: 6px;
+  }
+
+  .logo {
+    width: 50px;
   }
 }

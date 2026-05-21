@@ -7,13 +7,16 @@
   flex-direction: column;
   align-items: center;
   gap: 24px;
+  padding: 0 16px 32px;
 }
 
 .card {
   color: black;
   background-color: lightblue;
-  width: 342px;
-  height: 316px;
+  width: 100%;
+  max-width: 342px;
+  min-height: 200px;
+  height: auto;
   box-sizing: border-box;
   padding: 24px 16px;
   border-radius: 16px;
@@ -29,12 +32,12 @@
 }
 
 .card header p {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
 }
 
 .card header h3 {
-  font-size: 40px;
+  font-size: 22px;
   font-weight: 800;
   margin: 8px 0 0;
 }
@@ -43,28 +46,49 @@ hr {
   width: 65%;
   height: 4px;
   background-color: black;
+  border: none;
 }
+
 @media screen and (min-width: 768px) {
   .cards-materias {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 0 24px 32px;
+  }
+
+  .card {
+    max-width: 450px;
+    min-height: 280px;
+  }
+
+  .card header h3 {
+    font-size: 32px;
+  }
+
+  .card header p {
+    font-size: 18px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .card {
     width: 450px;
-    height: 338px;
+    min-height: 338px;
   }
+
   .card header h3 {
-    font-size: 48px;
+    font-size: 40px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .card {
     width: 618px;
+  }
+
+  .card header h3 {
+    font-size: 48px;
   }
 }
 
